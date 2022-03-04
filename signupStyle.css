@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+#header {
+  display: flex;
+  background-color: lemonchiffon;
+  justify-content: center;
+  width: 100%;
+}
+#logo {
+  justify-content: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  position: relative;
+  max-height: 10vh;
+  max-width: 10vw;
+}
+#title {
+  text-align: center;
+  justify-content: center;
+}
+.menu {
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+.main {
+  text-align: center;
+  min-width: 95vw;
+  min-height: 77vh;
+}
+#footer {
+  background-color: lemonchiffon;
+  text-align: center;
+}

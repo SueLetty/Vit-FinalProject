@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+#header {
+  display: flex;
+  background-color: lemonchiffon;
+  justify-content: center;
+  width: 100%;
+}
+#logo {
+  justify-content: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  position: relative;
+  max-height: 10vh;
+  max-width: 10vw;
+}
+#title {
+  text-align: center;
+  justify-content: center;
+}
+.menu {
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+.main {
+  display: flex;
+  /* border: solid 1px black; */
+  min-width: 95vw;
+  min-height: 77vh;
+}
+#display {
+  display: flex;
+  /* border: solid 1px black; */
+}
+.item {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  width: 20em;
+  height: 35em;
+  /* border: solid 1px black; */
+  text-align: center;
+}
+.item > img {
+  fill-opacity: initial;
+  width: 18em;
+  height: 25em;
+}
+#itemList {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+#itemLists {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 4px;
+  width: 3px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #616060;
+  color: white;
+}
+#bottommain {
+  display: flex;
+  /* border: solid 1px black; */
+}
+.subtotal {
+  /* border: solid 1px black; */
+  margin-left: 10em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  width: 30em;
+
+  font-size: larger;
+  /* background-color: darkseagreen; */
+}
+#subtotal {
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: center;
+  /* border: solid 1px black; */
+}
+
+#order {
+  text-align: end;
+}
+.th {
+  width: 33%;
+}
+#total {
+  /* border: solid 1px black; */
+  margin-left: 3em;
+  margin-right: 2em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  width: 30em;
+  height: 20em;
+  /* background-color: lightpink; */
+}
+#footer {
+  background-color: lemonchiffon;
+  text-align: center;
+}

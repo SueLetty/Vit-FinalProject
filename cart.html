@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Sue's Acrylic Painting Store</title>
+  </head>
+  <body id="home" onload="displayItem()">
+    <div id="header">
+      <!-- How to get my header center? -->
+      <a
+        href="file:///C:/Users/Sue/Desktop/Frontend%20Developer/week4/index.html"
+        ><img id="logo" src="finalProjectLogo.PNG"
+      /></a>
+
+      <h1 id="title">Sue's Acrylic Painting Store</h1>
+    </div>
+    <div class="menu">
+      <a
+        href="file:///C:/Users/Sue/Desktop/Frontend%20Developer/week4/index.html"
+        >Home</a
+      >
+
+      <a
+        href="file:///C:/Users/Sue/Desktop/Frontend%20Developer/week4/login.html"
+        >Log In</a
+      >
+      <a
+        href="file:///C:/Users/Sue/Desktop/Frontend%20Developer/week4/signup.html"
+        >Sign Up</a
+      >
+      <a
+        href="file:///C:/Users/Sue/Desktop/Frontend%20Developer/week4/cart.html"
+        >Cart</a
+      >
+    </div>
+
+    <div class="main">
+      <div class="subtotal">
+        <!-- How to fix table size? -->
+
+        <table id="myTable">
+          <tr>
+            <th class="th">Item Name</th>
+            <th class="th">Quantity</th>
+            <th class="th">Price</th>
+          </tr>
+        </table>
+
+        <h3 id="subtotal">Subtotal</h3>
+
+        <button id="order" onclick="addTotalPrice()">Order</button>
+      </div>
+      <div id="total">
+        <h2>Order Summary</h2>
+        <table id="myTotal"></table>
+        <!-- <h3 id="totalPrice">Total:</h3> -->
+        <button id="process" onclick="processTransaction()">process</button>
+      </div>
+    </div>
+    <div id="footer">Xiuxiang Wu</div>
+  </body>
+</html>
